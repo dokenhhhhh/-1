@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.Member" table="member" schema="club">
+        <id name="memberId" column="MemberId"/>
+        <property name="memberNum" column="MemberNum"/>
+        <property name="memberName" column="MemberName"/>
+        <property name="post" column="Post"/>
+        <property name="memberPhone" column="MemberPhone"/>
+        <property name="enterTime" column="EnterTime"/>
+        <property name="leaveTime" column="LeaveTime"/>
+        <many-to-one name="clubByClubId" class="model.Club" lazy="false">
+            <column name="ClubId" not-null="true"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

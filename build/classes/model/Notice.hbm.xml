@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.Notice" table="notice" schema="club">
+        <id name="noticeId" column="NoticeId"/>
+        <property name="noticeOption" column="NoticeOption"/>
+        <property name="noticeContent" column="NoticeContent"/>
+        <property name="noticeTime" column="NoticeTime"/>
+        <property name="noticeEndTime" column="NoticeEndTime"/>
+        <many-to-one name="clubByClubId" class="model.Club" lazy="false">
+            <column name="ClubId" not-null="true"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

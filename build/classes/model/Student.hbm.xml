@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.Student" table="student" schema="club">
+        <id name="studentId" column="StudentId"/>
+        <property name="studentName" column="StudentName"/>
+        <property name="studentPwd" column="StudentPwd"/>
+        <property name="studentSex" column="StudentSex"/>
+        <property name="studentMajor" column="StudentMajor"/>
+        <property name="studentClass" column="StudentClass"/>
+        <property name="studentPhone" column="StudentPhone"/>
+    </class>
+</hibernate-mapping>

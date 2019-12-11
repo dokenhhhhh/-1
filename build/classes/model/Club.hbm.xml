@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.Club" table="club" schema="club">
+        <id name="clubId" column="ClubId"/>
+        <property name="clubName" column="ClubName"/>
+        <property name="presidentnum" column="Presidentnum"/>
+        <property name="number" column="Number"/>
+        <property name="clubCreationTime" column="ClubCreationTime"/>
+        <property name="clubContebt" column="ClubContebt"/>
+    </class>
+</hibernate-mapping>

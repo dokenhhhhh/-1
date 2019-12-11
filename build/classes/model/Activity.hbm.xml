@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.Activity" table="activity" schema="club">
+        <id name="activityId" column="ActivityId"/>
+        <property name="activityName" column="ActivityName"/>
+        <property name="startTime" column="StartTime"/>
+        <property name="endTime" column="EndTime"/>
+        <property name="activitySpace" column="ActivitySpace"/>
+        <property name="activityNum" column="ActivityNum"/>
+        <property name="activityContent" column="ActivityContent"/>
+        <property name="activityState" column="ActivityState"/>
+    </class>
+</hibernate-mapping>
